@@ -5,12 +5,15 @@ import java.util.Scanner;
 public class Main {
 
     public static void main(String[] args) {
-	System.out.println("Podaj rok w liczbach arabskich.");
-	Scanner skaner = new Scanner(System.in);
-	String liczba = skaner.nextLine();
-    String [] data = liczba.split("");
-    System.out.println("Podany rok w liczbach rzymskich to:");
-        switch(Integer.parseInt(data[0])){
+       zamianaRoku();
+    }
+    public static void zamianaRoku () {
+        System.out.println("Podaj rok w liczbach arabskich.");
+        Scanner skaner = new Scanner(System.in);
+        String liczba = skaner.nextLine();
+        String[] data = liczba.split("");
+        System.out.println("Podany rok w liczbach rzymskich to:");
+        switch (Integer.parseInt(data[0])) {
             case 1:
                 System.out.print("M");
                 break;
@@ -23,7 +26,7 @@ public class Main {
             default:
                 System.out.print("");
         }
-        switch(Integer.parseInt(data[1])){
+        switch (Integer.parseInt(data[1])) {
             case 1:
                 System.out.print("C");
                 break;
@@ -54,7 +57,7 @@ public class Main {
             default:
                 System.out.print("");
         }
-        switch(Integer.parseInt(data[2])){
+        switch (Integer.parseInt(data[2])) {
             case 1:
                 System.out.print("X");
                 break;
@@ -85,7 +88,7 @@ public class Main {
             default:
                 System.out.print("");
         }
-        switch(Integer.parseInt(data[3])){
+        switch (Integer.parseInt(data[3])) {
             case 1:
                 System.out.print("I");
                 break;
